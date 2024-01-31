@@ -7,6 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
  * Une implémentation de ComicBook qui peut être stockée en BDD.
  */
 @Document
+@TypeAlias("ComicBook")
 public class StoredComicBook implements ComicBook, StoredObject {
     private final ComicBook underlyingBook;
     private final int id;
