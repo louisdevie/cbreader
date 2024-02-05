@@ -10,7 +10,7 @@ import java.nio.file.*;
 public class FilesRepository {
     private final String booksLocation;
 
-    public FilesRepository(@Value("${books_location}") String booksLocation) {
+    public FilesRepository(String booksLocation) {
         this.booksLocation = booksLocation;
     }
 
